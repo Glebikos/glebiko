@@ -5,7 +5,7 @@ const firebaseConfig = {
   projectId: "basedata-83f1b",
   storageBucket: "basedata-83f1b.appspot.com",
   messagingSenderId: "1093638687251",
-  appId: "1:1093638687251:web:aac7aef2b0b2d2f610cde6"
+  appId: "1:1093638687251:web:e2f139ddcf2f08c510cde6"
 };
 firebase.initializeApp(firebaseConfig);
 
