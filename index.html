@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Регистрация и вход</title>
     <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
-    <script src="script.js"></script>
+    <script src="combined.js"></script>
 </head>
 <body>
     <h1>Регистрация</h1>
     <form id="registrationForm">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password">Пароль:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <label for="regEmail">Email:</label><br>
+        <input type="email" id="regEmail" name="email" required><br>
+        <label for="regPassword">Пароль:</label><br>
+        <input type="password" id="regPassword" name="password" required><br><br>
         <input type="submit" value="Зарегистрироваться">
     </form>
+
+    <h1>Вход</h1>
+    <form id="loginForm">
+        <label for="loginEmail">Email:</label><br>
+        <input type="email" id="loginEmail" name="email" required><br>
+        <label for="loginPassword">Пароль:</label><br>
+        <input type="password" id="loginPassword" name="password" required><br><br>
+        <input type="submit" value="Войти">
+    </form>
+
     <div id="response"></div>
+    <div id="currentUser"></div>
 </body>
 </html>
